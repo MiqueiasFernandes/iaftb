@@ -1,3 +1,47 @@
-<h1>
-  {{title}}
-</h1>
+<mat-toolbar class="mat-elevation-z6 example-header" color="primary">
+    <mat-icon>menu</mat-icon>
+    Header
+</mat-toolbar>
+
+
+<mat-sidenav-container class="example-container" color="primary">
+    <mat-sidenav #sidenav mode="side" opened="true" class="example-sidenav" [fixedInViewport]="true">
+        {{options.fixed ? 'Fixed' : 'Non-fixed'}} Sidenav
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <p>
+            <mat-checkbox>Fixed</mat-checkbox>
+        </p>
+        <p>
+            <mat-form-field>
+                <input matInput type="number" placeholder="Top gap">
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field>
+                <input matInput type="number" placeholder="Bottom gap">
+            </mat-form-field>
+        </p>
+        <p><button mat-button (click)="sidenav.toggle()">Toggle</button></p>
+
+        <mat-card>oi</mat-card>
+        <mat-card>oi</mat-card>
+        <mat-card>oi</mat-card>
+        <mat-card>oi</mat-card>
+        <mat-card>oi</mat-card>
+        <mat-card>oi</mat-card>
+        <mat-card>oi</mat-card>
+        <mat-card>oi</mat-card>
+        <mat-card>oi</mat-card>
+        <mat-card>oi</mat-card>
+        <mat-card>oi</mat-card>
+        <mat-card>oi</mat-card>
+        <mat-card>oi</mat-card>
+
+
+
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
+<!-- <mat-toolbar class="example-footer">Footer</mat-toolbar> -->

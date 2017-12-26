@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'o app funciona! mesmo oi';
+  open = true;
+
+
+  options :any =   {
+    'fixed': true,
+    'top': 0,
+    'bottom': 0,
+  };
+
+  constructor() {
+  }
+
+
 }
